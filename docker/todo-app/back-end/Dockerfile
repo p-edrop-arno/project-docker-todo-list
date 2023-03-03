@@ -10,7 +10,7 @@ EXPOSE 3001
 # Adcionar o arquivo node_modules.tar.gz para imagem
 ADD ./node_modules.tar.gz .
 
-# Copiar todos os arquivos da pasta back-end para o diretório de trabalho
+# Copiar todos os arquivos da pasta back-end para imagem
 COPY ./back-end .
 
 # Iniciar a aplicação com o comando npm start
