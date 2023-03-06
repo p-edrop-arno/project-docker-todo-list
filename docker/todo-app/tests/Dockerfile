@@ -8,7 +8,7 @@ WORKDIR /app
 ADD ./node_modules.tar.gz .
 
 # Copiar todos os arquivos da pasta tests para imagem
-COPY ./tests .
+COPY . .
 
 # Iniciar os testes com o comando npm test
 ENTRYPOINT [ "npm", "test" ]
