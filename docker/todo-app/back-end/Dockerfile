@@ -11,7 +11,7 @@ EXPOSE 3001
 ADD ./node_modules.tar.gz .
 
 # Copiar todos os arquivos da pasta back-end para imagem
-COPY ./back-end .
+COPY . .
 
 # Iniciar a aplicação com o comando npm start
 ENTRYPOINT  [ "npm", "start" ]
